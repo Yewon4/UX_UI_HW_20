@@ -1,0 +1,971 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Notosans', sans-serif;
+}
+
+.navBar {
+    position: relative;
+    width: 100%;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+nav ul li a:hover {
+    text-decoration-line: underline;
+}
+
+.homeheroContainer{
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.homeherogrid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeheroleft img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.homeheroright > *{
+    margin-bottom: 1.1rem;
+    color: black;
+    text-align: center;
+    max-width: 1000px;
+}
+
+.homeheroright h1{
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 56px;
+}
+
+.homeheroright p{
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 56px;
+    vertical-align: middle;
+}
+
+.homeheroright span{
+    color: #575454;
+    font-family: 'Verdana', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    margin-bottom: 56px;
+}
+
+.heroContainer{
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.herogrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroleft img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.heroright > *{
+    margin-bottom: 1.1rem;
+    color: black;
+}
+
+.heroright h1{
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 56px;
+    width: 500px;
+    display: inline-block;
+}
+
+.heroright p{
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 56px;
+    width: 500px;
+}
+
+.resume{
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    background-color: #a28c8c;
+    border-radius: 10px;
+    padding: 18px 25px 19px 25px;
+    color: white;
+}
+
+.resume a{
+    color: white;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 96px 0;
+    gap: 36px;
+}
+
+
+.skills {
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans";
+    font-size: 36px;
+    font-weight: 600;
+}
+
+
+.skill-features {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 395px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding: 73px 58px;
+    position: relative;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+}
+
+.skill-features .detail {
+    display: inline-flex;
+    height: 271px;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    margin-top: -11px;
+    margin-bottom: -11px;
+}
+
+.skill-features .features {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 240px;
+    align-items: flex-start;
+    gap: 32px;
+    position: relative;
+}
+
+.skill-features .title {
+    position: relative;
+    width: 89px;
+    height: 27px;
+}
+
+.skill-features .text-wrapper {
+    position: absolute;
+    top: 2px;
+    left: 36px;
+    font-family: "Noto Sans";
+    font-weight: 600;
+    color: #242f65;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 22px;
+    white-space: nowrap;
+}
+
+.skill-features .icon {
+    position: absolute;
+    width: 26px;
+    height: 27px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.skill-features .frame {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 71px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.skill-features .group {
+    position: relative;
+    width: 82px;
+    height: 105px;
+}
+
+.skill-features .jira-png {
+    width: 80px;
+    height: 80px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.skill-features .div {
+    position: absolute;
+    width: 25px;
+    height: 19px;
+    top: 86px;
+    left: 26px;
+    font-family: "Noto Sans";
+    font-weight: 700;
+    color: #2a2a2a;
+    font-size: 13.9px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.skill-features .group-2 {
+    position: relative;
+    width: 75px;
+    height: 98px;
+}
+
+.skill-features .wow-image-miro-png {
+    width: 73px;
+    height: 73px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.skill-features .text-wrapper-2 {
+    position: absolute;
+    width: 33px;
+    height: 19px;
+    top: 79px;
+    left: 20px;
+    font-family: "Noto Sans";
+    font-weight: 700;
+    color: #2a2a2a;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.skill-features .group-3 {
+    position: relative;
+    width: 75px;
+    height: 96px;
+}
+
+.skill-features .wow-image-figma-png {
+    width: 47px;
+    height: 71px;
+    left: 14px;
+    position: absolute;
+    top: 0;
+}
+
+.skill-features .p-font {
+    position: absolute;
+    width: 75px;
+    height: 19px;
+    top: 77px;
+    left: 0;
+}
+
+.skill-features .text-wrapper-3 {
+    position: absolute;
+    width: 45px;
+    height: 19px;
+    top: -1px;
+    left: 15px;
+    font-family: "Noto Sans";
+    font-weight: 700;
+    color: #2a2a2a;
+    font-size: 14.9px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.skill-features .line {
+    position: relative;
+    width: 1px;
+    height: 222px;
+    object-fit: cover;
+}
+
+.skill-features .knowledge {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: flex-start;
+    gap: 23px;
+    position: relative;
+}
+
+.skill-features .title-2 {
+    position: relative;
+    width: 155px;
+    height: 32px;
+}
+
+.skill-features .text-wrapper-4 {
+    position: absolute;
+    top: 5px;
+    left: 44px;
+    font-family: "Noto Sans";
+    font-weight: 600;
+    color: #242f65;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 22px;
+    white-space: nowrap;
+}
+
+.skill-features .photo {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.skill-features .points {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.skill-features .element {
+    position: relative;
+    width: 211px;
+    height: 182px;
+}
+
+.skill-features .interaction-design {
+    position: absolute;
+    width: 183px;
+    top: 0;
+    left: 26px;
+    font-family: "Noto Sans";
+    font-weight: 500;
+    color: #525564;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 26.3px;
+}
+
+.skill-features .img {
+    top: 7px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -1px;
+}
+
+.skill-features .icon-2 {
+    top: 112px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -1px;
+}
+
+.skill-features .icon-3 {
+    top: 59px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -1px;
+}
+
+.skill-features .icon-4 {
+    top: 162px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -1px;
+}
+
+.skill-features .element-2 {
+    position: relative;
+    width: 256px;
+    height: 182px;
+}
+
+.skill-features .user-experience {
+    position: absolute;
+    width: 226px;
+    top: 0;
+    left: 28px;
+    font-family: "Noto Sans";
+    font-weight: 500;
+    color: #525564;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 26.3px;
+}
+
+.skill-features .icon-5 {
+    top: 8px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -1px;
+}
+
+.skill-features .icon-6 {
+    top: 109px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -1px;
+}
+
+.skill-features .icon-7 {
+    top: 58px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -1px;
+}
+
+.skill-features .icon-8 {
+    top: 160px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -1px;
+}
+
+.projects{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Project-title{
+    display: inline-flex;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+}
+
+.Project-title h1{
+    font-family: "Noto Sans";
+    font-size: 36px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Project-title .icon {
+    position: relative;
+    width: 40px;
+    height: 46px;
+}
+
+.container{
+    width: 834px;
+    height: 400px;
+    position: relative;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+}
+
+.container-2{
+    width: 834px;
+    height: 400px;
+    position: relative;
+    background: #F5F5F5;
+    border-radius: 20px
+}
+
+.container-3{
+    width: 834px;
+    height: 400px;
+    position: relative;
+    background: #F5F5F5;
+    border-radius: 20px
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    width: 354px;
+    height: 387px;
+    background-size: cover; 
+    background-position: 50% 50%;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.box{
+    width: 330px;
+    height: 360px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.content{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 276px;
+    height: 327px;
+    gap: 16px;
+    padding: 35px 35px;
+}
+
+.content-2{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    width: 276px;
+    height: 327px;
+    gap: 16px;
+    padding: 35px 35px;
+}
+
+.content-3{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    width: 276px;
+    height: 327px;
+    gap: 16px;
+    padding: 35px 35px;
+}
+
+.right h1{
+    font-family: "Noto Sans";
+    font-weight: 600;
+    color: #2a2a2a;
+    font-size: 30px;
+}
+
+.right h2{
+    font-family: "Noto Sans";
+    font-weight: 700;
+    color: #808080;
+    font-size: 18px;
+}
+
+.right p{
+    font-family: "Noto Sans";
+    font-weight: 400;
+    color: #2a2a2a;
+    font-size: 16px;
+}
+
+.button{
+    width: 160px;
+    background-color: #A28C8C;
+    border-radius: 5px;
+    position: relative;
+    height: 39px;
+    border: none;
+}
+
+.button .btn{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Noto Sans";
+    text-decoration: none;
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    right:0;
+    background: rgba(204, 183, 183, 0.54);
+    height: auto;
+    width: 100%;
+    font-family: "Noto Sans";
+    color: black;
+    padding-top: 24px;
+}
+
+
+.footer-content{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    }
+
+.footer-content h3{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    font-family: "Noto Sans";
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0 1.5rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: black;
+}
+.socials a i{
+    font-size: 50px;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: rgba(165, 42, 42, 0.514);
+}
+
+.footer-bottom{
+    background: #B3A1A1;
+    width: 100%;
+    text-align: right;
+    margin: auto;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: "Noto Sans";
+    color: #FFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.to-top {
+    background: #a28c8c;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: whitesmoke;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+nav.active ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 601px) {
+    .navBar .fa-bars {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navBar {
+        justify-content: space-between;
+    }
+
+    .navBar .fa-bars {
+        display: block;
+        font-size: 24px;
+
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.active {
+        display: block;
+    }
+
+    nav ul.active li {
+        display: block;
+    }
+
+
+    .nav-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+
+    .homeherogrid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .homeheroright h1 {
+        font-size: 30px;
+        text-align: center;
+        width: auto;
+    }
+
+    .homeheroright p {
+        display: block;
+        font-size: 20px;
+        width: auto;
+    }
+
+    .herogrid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .heroright h1 {
+        font-size: 30px;
+        text-align: center;
+        width: auto;
+    }
+
+    .heroright p {
+        display: block;
+        font-size: 20px;
+        width: auto;
+    }
+
+    .resume {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 20px;
+    }
+
+    .resume i {
+        margin-left: 10px;
+    }
+
+    .skills {
+        text-align: center;
+    }
+
+      
+    .skill-features {
+        padding: 50px 20px;
+        height: 500px;
+    }
+
+    .detail {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .Project-title h1 {
+        font-size: 30px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;       
+    }
+
+    .grid > * {
+        margin-bottom: 20px;
+    }
+
+    .container,
+    .container-2,
+    .container-3 {
+        width: 90%;
+        height: 600px;
+        margin-bottom: 30px;
+        display: flex;
+    }
+
+    .img {
+        display: block;
+        margin: auto;
+        height: 296px;
+        top: 0;
+        left: 0;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .box {
+        margin-top: 200px;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .content,
+    .content-2,
+    .content-3 {
+        padding: 25px 15px;
+        width: auto;
+        height: auto;
+    }
+
+    .knowledge {
+        margin-top: 15px;
+    }
+
+    .detail
+    .skill-features .features,
+    .skill-features .knowledge {
+        display: flex;
+        justify-content: center; 
+        align-items: center;        
+    }
+    .skill-features .detail {
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center; 
+        align-items: center
+    }
+
+    .footer{
+        width: auto;
+    }
+    
+
+}
+
+
+
